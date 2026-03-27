@@ -16,7 +16,19 @@ let a=[1,2,3,4,5,11];
 // for(let i=0;i<a.length;i++){
 //     console.log(a[i])
 // }
-a.forEach((Element)=>{
-    console.log(Element*Element);
+// a.forEach((Element)=>{
+//     console.log(Element*Element);
 
+// // })
+// a.map((Element)=>{
+//     console.log(Element);
+// })
+// let a2=a.filter((Element)=>{
+//     return Element%2==0;
+// })
+// console.log(a2);
+
+const b=a.reduce((h1,h2)=>{
+    return h1+h2;
 })
+console.log(b);
