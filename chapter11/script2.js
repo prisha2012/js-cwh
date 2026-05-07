@@ -1,15 +1,21 @@
 class Animal{
     constructor(name,color){
-        this.name=name;
+        this._name=name;
         this.color=color;
     }
     run(){
-        console.log(this.name+" is running");
+        console.log(this._name+" is running");
 
     }
     shout(){
-        console.log(this.name+" is shouting");
+        console.log(this._name+" is shouting");
         
+    }
+    get name(){
+        return this._name;
+    }
+    set name(newname){
+        return this._name;
     }
 }
 class Monkey extends Animal{
