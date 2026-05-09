@@ -25,7 +25,21 @@
 // let obj1={...arr};
 // console.log(obj1);
 
-greet();
-function greet(){
-    console.log("good morning");
+// greet();
+// function greet(){
+//     console.log("good morning");
+// }
+const sayhello=(name)=> console.log("Say Hello "+name);
+ 
+const x={
+    name: "Harry",
+    role: "JS Developer",
+    exp: "30",
+    show: function(){
+        setTimeout(() => {
+            
+            console.log(`the name is ${this.name}\n the role id ${this.role}`)
+        }, 2000);
+    }
 }
+x.show();
